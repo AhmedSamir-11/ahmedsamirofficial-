@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Samir | Junior Flutter Developer</title>
+  <meta name="description" content="Ahmed Samir – Junior Flutter & Mobile App Developer passionate about building modern, responsive UIs with Flutter and Dart." />
+  <meta name="keywords" content="Ahmed Samir, Flutter Developer, Mobile App Developer, Dart, UI Developer, Egypt" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══════════════════════════════════════ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <img src="logo.png" alt="Ahmed Samir Logo" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"       class="nav-link" id="nl-home">Home</a></li>
+        <li><a href="#about"      class="nav-link" id="nl-about">About</a></li>
+        <li><a href="#education"  class="nav-link" id="nl-education">Education</a></li>
+        <li><a href="#skills"     class="nav-link" id="nl-skills">Skills</a></li>
+        <li><a href="#training"   class="nav-link" id="nl-training">Experience</a></li>
+        <li><a href="#projects"   class="nav-link" id="nl-projects">Projects</a></li>
+        <li><a href="#contact"    class="nav-link" id="nl-contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Text side -->
+      <div class="hero-text">
+        <div class="hero-badge" id="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Opportunities
+        </div>
+        <h1 class="hero-name" id="hero-name">Ahmed Samir</h1>
+        <div class="hero-title" id="hero-title">
+          <span class="title-prefix">I'm a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc" id="hero-desc">
+          Junior Flutter &amp; Mobile App Developer passionate about crafting
+          modern, responsive UIs and transforming Figma designs into
+          polished Flutter applications.
+        </p>
+        <div class="hero-actions" id="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+            <i class="fa-solid fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline" id="btn-get-in-touch">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Trainings</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">10</span>
+            <span class="stat-label">Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo side -->
+      <div class="hero-visual" id="hero-visual">
+        <div class="avatar-wrap">
+          <div class="avatar-ring ring-outer"></div>
+          <div class="avatar-ring ring-inner"></div>
+          <div class="avatar-circle" id="avatar-circle">
+            <img src="profile.jpg" alt="Ahmed Samir" class="avatar-photo" />
+          </div>
+          <!-- Floating chips -->
+          <div class="float-chip chip-flutter" id="chip-flutter">
+            <i class="devicon-flutter-plain chip-dev-icon" style="color:#54C5F8;"></i>
+            Flutter
+          </div>
+          <div class="float-chip chip-dart" id="chip-dart">
+            <i class="devicon-dart-plain chip-dev-icon" style="color:#00D2FF;"></i>
+            Dart
+          </div>
+          <div class="float-chip chip-figma" id="chip-figma">
+            <i class="devicon-figma-plain chip-dev-icon" style="color:#A259FF;"></i>
+            Figma
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" id="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ABOUT ═══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" data-aos>
+          <div class="about-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Flutter Developer</h3>
+          <p>I build modern mobile apps with Flutter & Dart, focusing on clean, maintainable code and beautiful user interfaces.</p>
+        </div>
+        <div class="about-card" data-aos>
+          <div class="about-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>UI Enthusiast</h3>
+          <p>I love translating Figma designs into pixel-perfect Flutter applications with smooth animations and responsive layouts.</p>
+        </div>
+        <div class="about-card" data-aos>
+          <div class="about-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Mobile First</h3>
+          <p>I approach every project with a mobile-first mindset, ensuring seamless experiences across all screen sizes.</p>
+        </div>
+      </div>
+      <div class="about-text" data-aos>
+        <p>
+          I'm <strong>Ahmed Samir</strong>, a Junior Flutter Developer with a passion for mobile application development.
+          I'm currently studying Computer Science while actively enhancing my skills through specialized training programs.
+        </p>
+        <p>
+          My journey focuses on mastering Flutter & Dart, building responsive UIs, and converting Figma designs into
+          fully functional Flutter applications. I'm driven by creating apps that combine quality design, excellent usability, and clean, scalable code.
+        </p>
+        <div class="about-goal">
+          <div class="goal-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <div>
+            <h4>Career Goal</h4>
+            <p>To evolve into a professional Mobile App Developer, gaining real-world experience through diverse projects
+            and continuously growing both technically and professionally in the Flutter ecosystem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ EDUCATION ═══ -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+
+      <div class="edu-card-modern" data-aos>
+        <div class="edu-header-modern">
+          <div class="edu-logo-modern">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <div class="edu-title-group">
+            <h3 class="edu-degree-modern">Computer Science</h3>
+            <h4 class="edu-univ-modern">Thebes Academy – Maadi Branch</h4>
+          </div>
+          <div class="edu-badge-modern">
+            <i class="fa-solid fa-spinner fa-spin-pulse"></i> 4th Year – Ongoing
+          </div>
+        </div>
+
+        <div class="edu-meta-modern">
+          <span><i class="fa-regular fa-calendar"></i> 2023 – 2027</span>
+          <span><i class="fa-solid fa-location-dot"></i> Maadi, Cairo – Egypt</span>
+        </div>
+
+        <p class="edu-desc-modern">
+          Currently pursuing a Bachelor's degree in Computer Science, focusing on building solid foundations in programming, software development, data structures, and algorithms — bridging academic concepts with hands-on mobile app engineering.
+        </p>
+
+        <div class="edu-tags-modern">
+          <span><i class="fa-solid fa-code"></i> Programming</span>
+          <span><i class="fa-solid fa-diagram-project"></i> Data Structures</span>
+          <span><i class="fa-solid fa-mobile-screen-button"></i> Mobile Dev</span>
+          <span><i class="fa-solid fa-brain"></i> Algorithms</span>
+          <span><i class="fa-solid fa-laptop-code"></i> Software Dev</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SKILLS ═══ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      </div>
+
+      <!-- ── Main Tech Icons ─────────────────────────────────── -->
+      <div class="skills-icons-grid" data-aos>
+        <div class="skill-icon-card">
+          <div class="sic-inner">
+            <i class="devicon-flutter-plain sic-icon" style="color:#54C5F8;"></i>
+          </div>
+          <span class="sic-label">Flutter</span>
+          <div class="sic-level"><span style="width:75%"></span></div>
+        </div>
+
+        <div class="skill-icon-card">
+          <div class="sic-inner">
+            <i class="devicon-dart-plain sic-icon" style="color:#00D2FF;"></i>
+          </div>
+          <span class="sic-label">Dart</span>
+          <div class="sic-level"><span style="width:78%"></span></div>
+        </div>
+
+        <div class="skill-icon-card">
+          <div class="sic-inner">
+            <i class="devicon-figma-plain sic-icon" style="color:#A259FF;"></i>
+          </div>
+          <span class="sic-label">Figma</span>
+          <div class="sic-level"><span style="width:70%"></span></div>
+        </div>
+
+        <div class="skill-icon-card">
+          <div class="sic-inner">
+            <i class="devicon-git-plain sic-icon" style="color:#F05032;"></i>
+          </div>
+          <span class="sic-label">Git</span>
+          <div class="sic-level"><span style="width:65%"></span></div>
+        </div>
+
+        <div class="skill-icon-card">
+          <div class="sic-inner">
+            <i class="devicon-github-original sic-icon" style="color:#fff;"></i>
+          </div>
+          <span class="sic-label">GitHub</span>
+          <div class="sic-level"><span style="width:65%"></span></div>
+        </div>
+
+        <div class="skill-icon-card">
+          <div class="sic-inner">
+            <i class="devicon-vscode-plain sic-icon" style="color:#007ACC;"></i>
+          </div>
+          <span class="sic-label">VS Code</span>
+          <div class="sic-level"><span style="width:85%"></span></div>
+        </div>
+
+        <div class="skill-icon-card">
+          <div class="sic-inner">
+            <i class="devicon-androidstudio-plain sic-icon" style="color:#3DDC84;"></i>
+          </div>
+          <span class="sic-label">Android Studio</span>
+          <div class="sic-level"><span style="width:60%"></span></div>
+        </div>
+
+        <div class="skill-icon-card">
+          <div class="sic-inner">
+            <!-- Custom Postman SVG Icon since Devicons sometimes misses it -->
+            <svg viewBox="0 0 32 32" width="40" height="40" fill="#FF6C37" class="sic-icon">
+              <path d="M16 0C7.163 0 0 7.163 0 16c0 8.836 7.163 16 16 16 8.837 0 16-7.164 16-16 0-8.837-7.163-16-16-16zm9.362 17.935c-2.483 5.485-8.914 7.917-14.4 5.434-5.484-2.484-7.915-8.915-5.432-14.4 2.484-5.484 8.915-7.915 14.4-5.433 5.483 2.483 7.915 8.914 5.432 14.399zm-4.73-10.457c-1.572-1.572-3.714-2.399-5.918-2.277-2.185.12-4.249 1.168-5.65 2.871s-2.108 3.903-1.928 6.115 1.341 4.159 3.064 5.425c1.71 1.256 3.844 1.764 5.955 1.416 2.096-.347 4.02-1.583 5.343-3.415l-3.32-2.348c-.76.993-1.854 1.66-3.056 1.83-1.189.166-2.4-.078-3.37-.677-1.026-.633-1.785-1.578-2.146-2.671-.358-1.082-.3-2.282.16-3.32.48-1.085 1.342-1.925 2.417-2.35 1.082-.426 2.308-.413 3.394.032.748.307 1.4.8 1.905 1.439zm4.767 7.027l7.534-4.887-1.144-1.776-5.834 3.754-.038-.112c.706-1.39 1.107-2.936 1.171-4.502.133-3.024-1.115-5.957-3.378-7.94-2.274-1.996-5.263-2.923-8.257-2.55-2.99.37-5.698 1.942-7.464 4.331-1.766 2.39-2.384 5.428-1.704 8.358.68 2.924 2.485 5.434 4.975 6.914 2.49 1.474 5.495 1.761 8.258.788 1.464-.516 2.78-1.347 3.858-2.427z"/>
+            </svg>
+          </div>
+          <span class="sic-label">Postman</span>
+          <div class="sic-level"><span style="width:50%"></span></div>
+        </div>
+      </div>
+
+      <!-- ── Skill Category Cards ────────────────────────────── -->
+      <div class="skills-cats" data-aos>
+        <div class="scat-card">
+          <div class="scat-header">
+            <div class="scat-icon-wrap"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Mobile Development</h3>
+          </div>
+          <ul class="scat-list">
+            <li><i class="fa-solid fa-check-circle"></i> Flutter &amp; Dart</li>
+            <li><i class="fa-solid fa-check-circle"></i> Flutter Widgets</li>
+            <li><i class="fa-solid fa-check-circle"></i> Responsive UI</li>
+            <li><i class="fa-solid fa-check-circle"></i> Navigation</li>
+            <li><i class="fa-solid fa-check-circle"></i> Material Design</li>
+            <li><i class="fa-solid fa-check-circle"></i> Figma → Flutter</li>
+          </ul>
+        </div>
+
+        <div class="scat-card">
+          <div class="scat-header">
+            <div class="scat-icon-wrap"><i class="fa-solid fa-code"></i></div>
+            <h3>Programming</h3>
+          </div>
+          <ul class="scat-list">
+            <li><i class="fa-solid fa-check-circle"></i> Object-Oriented Programming</li>
+            <li><i class="fa-solid fa-check-circle"></i> Functions &amp; Collections</li>
+            <li><i class="fa-solid fa-check-circle"></i> Programming Fundamentals</li>
+            <li><i class="fa-solid fa-check-circle"></i> Problem Solving</li>
+          </ul>
+        </div>
+
+        <div class="scat-card">
+          <div class="scat-header">
+            <div class="scat-icon-wrap"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>APIs &amp; Data</h3>
+          </div>
+          <ul class="scat-list">
+            <li><i class="fa-solid fa-check-circle"></i> REST APIs – Basics</li>
+            <li><i class="fa-solid fa-check-circle"></i> JSON Parsing</li>
+            <li><i class="fa-solid fa-check-circle"></i> HTTP Requests – Basics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ TRAINING ═══ -->
+  <section class="section section-alt" id="training">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">My Experience</span>
+        <h2 class="section-title">Training &amp; <span class="gradient-text">Experience</span></h2>
+      </div>
+
+      <div class="timeline">
+        <!-- DEPI -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-line-dot">
+            <div class="tl-icon-wrap"><i class="fa-solid fa-laptop-code"></i></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-badge badge-current">Current</div>
+            <div class="tl-org-row">
+              <div class="tl-org-logo depi-logo">
+                <i class="fa-solid fa-flag"></i>
+              </div>
+              <div>
+                <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                <span class="org-sub">Flutter Mobile Application Development</span>
+              </div>
+            </div>
+            <div class="tl-date"><i class="fa-regular fa-calendar"></i> July 2026 – Present</div>
+            <p class="timeline-desc">
+              Specialized training in mobile app development using Flutter &amp; Dart,
+              with a focus on practical application and technical + professional skill building.
+            </p>
+            <div class="timeline-skills">
+              <span class="tl-skill"><i class="devicon-flutter-plain"></i> Flutter &amp; Dart</span>
+              <span class="tl-skill"><i class="fa-solid fa-mobile"></i> Mobile App Dev</span>
+              <span class="tl-skill"><i class="fa-solid fa-paint-brush"></i> UI Development</span>
+              <span class="tl-skill"><i class="fa-solid fa-plug"></i> APIs</span>
+              <span class="tl-skill"><i class="devicon-github-original"></i> Git &amp; GitHub</span>
+              <span class="tl-skill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+              <span class="tl-skill"><i class="fa-solid fa-users"></i> Teamwork</span>
+              <span class="tl-skill"><i class="fa-solid fa-id-card"></i> Personal Branding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arab Org -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-line-dot">
+            <div class="tl-icon-wrap"><i class="fa-solid fa-building-columns"></i></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-badge badge-done">Completed</div>
+            <div class="tl-org-row">
+              <div class="tl-org-logo arab-logo">
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <div>
+                <h3>Arab Organization for Industrialization</h3>
+                <span class="org-sub">Arab Institute for Advanced Technology</span>
+              </div>
+            </div>
+            <div class="tl-date"><i class="fa-regular fa-calendar"></i> February 2026 – May 2026</div>
+            <p class="timeline-desc">
+              Hands-on training in mobile application development with Flutter,
+              focusing on applying Flutter &amp; Dart fundamentals and building UI components.
+            </p>
+            <div class="timeline-skills">
+              <span class="tl-skill"><i class="devicon-flutter-plain"></i> Flutter</span>
+              <span class="tl-skill"><i class="devicon-dart-plain"></i> Dart</span>
+              <span class="tl-skill"><i class="fa-solid fa-cubes"></i> Flutter Widgets</span>
+              <span class="tl-skill"><i class="fa-solid fa-paint-brush"></i> UI Development</span>
+              <span class="tl-skill"><i class="fa-solid fa-mobile-screen"></i> App Screens</span>
+              <span class="tl-skill"><i class="fa-solid fa-graduation-cap"></i> Fundamentals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PROJECTS ═══ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">What I Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-aos>
+          <div class="project-header">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-train-subway" style="color:var(--accent);font-size:2rem;"></i>
+            </div>
+            <div class="project-status status-progress">
+              <i class="fa-solid fa-circle-notch fa-spin"></i> In Progress
+            </div>
+          </div>
+          <h3 class="project-title">Metro App (Dart → Flutter)</h3>
+          <p class="project-desc">
+            A comprehensive Metro application originally developed in Dart to apply programming concepts practically.
+            Currently being migrated to a full Flutter application with a Figma-designed UI,
+            responsive layouts, and multi-screen navigation.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item"><i class="fa-solid fa-circle-arrow-right"></i> Converting Dart project logic to Flutter</div>
+            <div class="highlight-item"><i class="fa-solid fa-circle-arrow-right"></i> Building screens from Figma UI design</div>
+            <div class="highlight-item"><i class="fa-solid fa-circle-arrow-right"></i> Responsive &amp; navigable interface</div>
+            <div class="highlight-item"><i class="fa-solid fa-circle-arrow-right"></i> Clean, scalable code structure</div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-flutter-plain" style="color:#54C5F8;"></i> Flutter</span>
+            <span class="tech-badge"><i class="devicon-dart-plain" style="color:#00D2FF;"></i> Dart</span>
+            <span class="tech-badge"><i class="devicon-figma-plain" style="color:#A259FF;"></i> Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT ═══ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      </div>
+      <div class="contact-wrapper" data-aos>
+        <div class="contact-intro">
+          <p>I'm open to internship opportunities, collaborations, and freelance projects. Whether you have a question or just want to say hi — feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:ahmedsamirofficial@gmail.com" class="contact-link">
+              <div class="cl-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="cl-label">Email</span>
+                <span class="cl-value">ahmedsamirofficial@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/ahmedsamirofficial" target="_blank" rel="noopener" class="contact-link">
+              <div class="cl-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-value">linkedin.com/in/ahmedsamirofficial</span>
+              </div>
+            </a>
+            <a href="https://github.com/ahmedsamirofficial" target="_blank" rel="noopener" class="contact-link">
+              <div class="cl-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <span class="cl-label">GitHub</span>
+                <span class="cl-value">github.com/ahmedsamirofficial</span>
+              </div>
+            </a>
+            <a href="tel:+201063752894" class="contact-link">
+              <div class="cl-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="cl-label">Phone</span>
+                <span class="cl-value">+20 106 375 2894</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name"><i class="fa-solid fa-user"></i> Name</label>
+              <input type="text" id="form-name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email"><i class="fa-solid fa-envelope"></i> Email</label>
+              <input type="email" id="form-email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-subject"><i class="fa-solid fa-tag"></i> Subject</label>
+            <input type="text" id="form-subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="form-message"><i class="fa-solid fa-comment-dots"></i> Message</label>
+            <textarea id="form-message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btn-send">
+            <span id="btn-send-text">Send Message</span>
+            <i class="fa-solid fa-paper-plane" id="btn-send-icon"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">
+          <img src="logo.png" alt="Ahmed Samir Logo" class="footer-logo-img" />
+        </a>
+        <p class="footer-tagline">Building the future, one Flutter screen at a time.</p>
+        <div class="footer-socials">
+          <a href="mailto:ahmedsamirofficial@gmail.com"              class="footer-social" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/ahmedsamirofficial"       target="_blank" class="footer-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/ahmedsamirofficial"            target="_blank" class="footer-social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#training">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="footer-copy">© 2026 Ahmed Samir. Designed &amp; Developed with <i class="fa-solid fa-heart" style="color:#ff6b6b;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
